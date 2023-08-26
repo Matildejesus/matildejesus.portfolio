@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/aboutme.css" />
+    <link rel="stylesheet" href="/styles/header-footer.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <title>AboutMe</title>
+  </head>
+  <body>
+    <%- include("partials/header.ejs") %>
+    <h1>A little bit about me</h1>
+    <div class="container max-w-[1024px]">
+      <div class="grid w-full grid-cols-1 md:grid-cols-12">
+        <div class="col-span-12 flex flex-col gap-12 md:col-span-8 md:pr-12">
+          <div class="flex flex-col gap-2">
+            <p
+              class="font-semibold uppercase text-light-gray/50 dark:text-medium-gray"
+            >
+              Welcome to my corner of the digital world!
+            </p>
+            <p class="text-[18px] leading-[160%] text-dark-gray">
+              I’m
+              <span class="text-onyx dark:text-white">Matilde</span>, an
+              international student on the brink of graduating from the
+              prestigious University of Melbourne.
+            </p>
+          </div>
+          <div class="flex flex-col gap-2">
+            <p
+              class="font-semibold uppercase text-light-gray/50 dark:text-medium-gray"
+            >
+              Unveiling Who I Am
+            </p>
+            <p class="text-[18px] leading-[160%] text-dark-gray">
+              Just a girl who wants to create captivating apps, innovative
+              websites, and immersive games of her own.
+            </p>
+          </div>
+          <div class="flex flex-col gap-2">
+            <p
+              class="font-semibold uppercase text-light-gray/50 dark:text-medium-gray"
+            >
+              What I do
+            </p>
+            <p class="text-[18px] leading-[160%] text-dark-gray">
+              Studying is more than just a task; it's a passion that I
+              wholeheartedly pursue. In my free time, I've immersed myself in
+              web development courses through UDEMY, in hopes of creating a
+              portfolio worth being proud of.
+            </p>
+          </div>
+          <div class="flex flex-col gap-2">
+            <p
+              class="font-semibold uppercase text-light-gray/50 dark:text-medium-gray"
+            >
+              What I Did
+            </p>
+            <p class="text-[18px] leading-[160%] text-dark-gray">
+              Throughout my academic journey at University of Melbourne, I had
+              the privilege of delving into both the design world and the world
+              of code. From collaborating to create beautiful UI to mastering
+              the inticacies of algorithms, I have learnt the power of
+              collaboration, and relentless weeks of sitting on my ass and
+              coding (which, believe it or not, i do enjoy).
+            </p>
+          </div>
+          <div class="flex flex-col gap-2">
+            <p
+              class="font-semibold uppercase text-light-gray/50 dark:text-medium-gray"
+            >
+              Why Am I Heading Down This Path
+            </p>
+            <p class="text-[18px] leading-[160%] text-dark-gray">
+              After 18 years of studying, the one thing that I've learnt is I
+              hold a STRONG AVERSION for writing. I love how I can see my
+              creations evolve in real time. Much like when I was engrossed with
+              Sims4, creating and upgrading my houses as I go, programming
+              offers a continuous sense of achievement. Every meticulous
+              placement of an image, every command mastered, IT GIVES ME A SENSE
+              OF ACCOMPLISHMENT.
+            </p>
+          </div>
+          <div class="flex flex-col gap-2">
+            <p
+              class="font-semibold uppercase text-light-gray/50 dark:text-medium-gray"
+            >
+              A Glimpse into Me
+            </p>
+            <ul>
+              <li>A fusion of Portuguese and Chinese heritage</li>
+              <li>Been gaming since I could walk</li>
+              <li>Not just a nerd but a shopaholic</li>
+              <li>A weird sense of humour</li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-2">
+            <p class="text-[18px] leading-[160%] text-dark-gray">
+              Thanks for reading till the end. Feel free to reach out, check out
+              my projects, my resume, you might find something you like 🤗.
+            </p>
+            <p>
+              Warmly,<br />
+              Matilde
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include("partials/footer.ejs") %>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <script href="portfolio.js"></script>
+  </body>
+</html>

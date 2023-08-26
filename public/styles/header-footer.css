@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*
+.image-cropped-transform {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 55%;
+  transform: scale(1) translate(0, 1);
+}
+
+.container-wrapper {
+  background-color: white;
+  display: flex;
+}
+*/
+a.button {
+  text-decoration: none;
+  color: #465562;
+}
+
+button.nav-link {
+  margin: 0;
+  padding: 0;
+  text-underline-offset: -1rem;
+}
+
+@media (min-width: 989px) {
+  button.btn {
+    position: fixed;
+    right: 2%;
+    top: 1%;
+  }
+}
+/*
+.project-title {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  padding-bottom: 3rem;
+}
+
+*/
+.portrait {
+  border-radius: 50px;
+}
+/*
+.bio-text {
+  margin-bottom: 1%;
+}
+.intro {
+  order: 1;
+}
+
+.proj-title {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+.bio {
+  order: -1;
+  padding-left: 5%;
+}
+
+.project-link {
+  color: white;
+  text-decoration: none;
+}
+
+.header-resume:link,
+.header-resume:visited {
+  color: purple;
+} */

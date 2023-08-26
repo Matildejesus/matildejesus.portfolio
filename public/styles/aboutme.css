@@ -1,0 +1,10 @@
+body {
+  background: linear-gradient(45deg, #4c398f, #37c6d3, rgb(15, 17, 82));
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #133f6b;
+}

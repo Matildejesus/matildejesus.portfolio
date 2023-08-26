@@ -1,0 +1,28 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "portfolio.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node portfolio.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matildejesus/home.git"
+  },
+  "author": "Matilde",
+  "license": "ISC",
+  "homepage": "https://github.com/Matildejesus/home",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "jquery": "npm:jQuery@^1.7.4",
+    "jQuery": "^1.7.4",
+    "jsdom": "^22.1.0",
+    "path": "^0.12.7",
+    "url": "^0.11.1"
+  }
+}

@@ -1,0 +1,124 @@
+<nav
+  class="navbar sticky-top navbar-expand-lg py-2 <%= activeTab === 'aboutme' ? 'shadow-lg' : '' %>"
+  style="background-color: <%= activeTab === 'aboutme' ? 'transparent' : 'white' %>"
+>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img
+        src="./imgs/D2D71A47-31DF-4C61-848C-40A5D68324D7.jpg"
+        alt="Logo"
+        height="24"
+        class="d-inline-block align-text-top portrait"
+      />
+      Portfolio
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav nav-underline" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link <%= activeTab === 'home' ? 'active' : '' %>"
+            id="home-tab"
+            data-bs-toglle="tab"
+            data-bs-target="#home"
+            type="button"
+            role="tab"
+            aria-controls="home"
+            aria-selected="true"
+            href="/"
+          >
+            <a class="button" href="/">Home</a>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link <%= activeTab === 'aboutme' ? 'active' : '' %>"
+            id="aboutme-tab"
+            data-bs-toglle="tab"
+            data-bs-target="#aboutme"
+            type="button"
+            role="tab"
+            aria-controls="aboutme"
+            aria-selected="false"
+          >
+            <a class="button" href="/aboutme">About Me</a>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link <%= activeTab === 'projects' ? 'active' : '' %>"
+            id="projects-tab"
+            data-bs-toglle="tab"
+            data-bs-target="#projects"
+            type="button"
+            role="tab"
+            aria-controls="projects"
+            aria-selected="true"
+            href="/projects"
+          >
+            <a class="button" href="/projects">Projects</a>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link <%= activeTab === 'resume' ? 'active' : '' %>"
+            id="resume-tab"
+            data-bs-toglle="tab"
+            data-bs-target="#resume"
+            type="button"
+            role="tab"
+            aria-controls="resume"
+            aria-selected="false"
+          >
+            <a class="button" href="/resume">Resume</a>
+          </button>
+        </li>
+        <div class="tab-content">
+          <div
+            class="tab-pane <%= activeTab === 'home' ? 'active' : '' %>"
+            id="home"
+            role="tabpanel"
+            aria-labelledby="home-tab"
+            tabindex="0"
+          ></div>
+          <div
+            class="tab-pane <%= activeTab === 'aboutme' ? 'active' : '' %>"
+            id="aboutme"
+            role="tabpanel"
+            aria-labelledby="aboutme-tab"
+            tabindex="0"
+          ></div>
+          <div
+            class="tab-pane <%= activeTab === 'projects' ? 'active' : '' %>"
+            id="projects"
+            role="tabpanel"
+            aria-labelledby="projects-tab"
+            tabindex="0"
+          ></div>
+          <div
+            class="tab-pane <%= activeTab === 'resume' ? 'active' : '' %>"
+            id="resume"
+            role="tabpanel"
+            aria-labelledby="resume-tab"
+            tabindex="0"
+          ></div>
+        </div>
+      </ul>
+      <form class="d-flex" role="search" id="navbarNavDropdown">
+        <button class="btn btn-outline-success" type="submit">
+          <a class="button" role="button" href="tel:0436367643"> Contact Me </a>
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>

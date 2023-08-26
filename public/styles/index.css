@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Fjalla+One&display=swap");
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h2,
+p {
+  font-family: "Arvo", serif;
+}
+
+h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 900;
+}
+
+div.footer {
+  margin-top: auto;
+  bottom: 0;
+}
+
+span.name {
+  color: white;
+}
+
+.body-portrait {
+  border-radius: 50px;
+  width: 20%;
+}
+
+div.body {
+  width: 50%;
+  margin: 9% 50% 4%;
+}
