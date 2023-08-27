@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Fjalla+One&display=swap");
 
 body {
   background: linear-gradient(217deg, #37c6d3, rgba(255, 0, 0, 0) 70.71%),
@@ -17,10 +17,14 @@ body {
   margin: 40px 20%;
 }
 h1 {
-  font-family: "Fjalla One", sans-serif;
   font-weight: bold;
   font-size: 10rem;
-  padding-bottom: 2rem;
+  font-family: "ADLaM Display", cursive;
+  /* padding-bottom: 2rem; */
+}
+
+p.subtitle {
+  font-size: 1.5rem;
 }
 
 h1,
@@ -34,4 +38,14 @@ li {
 .subtitle {
   font-weight: 700;
   padding-bottom: 0.5rem;
+}
+
+.title {
+  border-bottom: 2px solid white;
+  padding-bottom: 2rem;
+  width: 80%;
+  margin: 5% 10% 0;
+  font-weight: bold;
+  font-size: 4rem;
+  font-family: "ADLaM Display", cursive;
 }
