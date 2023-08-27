@@ -1,6 +1,6 @@
 <nav
   class="navbar sticky-top navbar-expand-lg py-2 <%= activeTab === 'aboutme' ? 'shadow-lg' : '' %>"
-  style="background-color: <%= activeTab === 'aboutme' ? 'transparent' : 'white' %>"
+  style="background-color: white"
 >
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
@@ -56,21 +56,6 @@
         </li>
         <li class="nav-item" role="presentation">
           <button
-            class="nav-link <%= activeTab === 'projects' ? 'active' : '' %>"
-            id="projects-tab"
-            data-bs-toglle="tab"
-            data-bs-target="#projects"
-            type="button"
-            role="tab"
-            aria-controls="projects"
-            aria-selected="true"
-            href="/projects"
-          >
-            <a class="button" href="/projects">Projects</a>
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
             class="nav-link <%= activeTab === 'resume' ? 'active' : '' %>"
             id="resume-tab"
             data-bs-toglle="tab"
@@ -81,6 +66,21 @@
             aria-selected="false"
           >
             <a class="button" href="/resume">Resume</a>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link <%= activeTab === 'work' ? 'active' : '' %>"
+            id="work-tab"
+            data-bs-toglle="tab"
+            data-bs-target="#work"
+            type="button"
+            role="tab"
+            aria-controls="work"
+            aria-selected="true"
+            href="/work"
+          >
+            <a class="button" href="/work">Works</a>
           </button>
         </li>
         <div class="tab-content">
@@ -99,17 +99,17 @@
             tabindex="0"
           ></div>
           <div
-            class="tab-pane <%= activeTab === 'projects' ? 'active' : '' %>"
-            id="projects"
-            role="tabpanel"
-            aria-labelledby="projects-tab"
-            tabindex="0"
-          ></div>
-          <div
             class="tab-pane <%= activeTab === 'resume' ? 'active' : '' %>"
             id="resume"
             role="tabpanel"
             aria-labelledby="resume-tab"
+            tabindex="0"
+          ></div>
+          <div
+            class="tab-pane <%= activeTab === 'work' ? 'active' : '' %>"
+            id="work"
+            role="tabpanel"
+            aria-labelledby="work-tab"
             tabindex="0"
           ></div>
         </div>

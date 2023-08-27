@@ -19,18 +19,8 @@ h1 {
   font-weight: 900;
 }
 
-div.footer {
-  margin-top: auto;
-  bottom: 0;
-}
-
 span.name {
   color: white;
-}
-
-.body-portrait {
-  border-radius: 50px;
-  width: 20%;
 }
 
 div.body {

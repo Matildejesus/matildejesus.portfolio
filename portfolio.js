@@ -15,8 +15,8 @@ app.get("/aboutme", (req, res) => {
   res.render("aboutme", { activeTab: "aboutme" });
 });
 
-app.get("/projects", (req, res) => {
-  res.render("projects", { activeTab: "projects" });
+app.get("/work", (req, res) => {
+  res.render("work", { activeTab: "work" });
 });
 
 app.get("/resume", (req, res) => {

@@ -1,10 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Fjalla+One&display=swap");
+
 body {
-  background: linear-gradient(45deg, #4c398f, #37c6d3, rgb(15, 17, 82));
+  background: linear-gradient(217deg, #37c6d3, rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(86, 50, 186, 255), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgb(15, 17, 82), rgba(0, 0, 255, 0) 70.71%);
   width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   background-size: cover;
   background-repeat: no-repeat;
-  color: #133f6b;
+}
+
+.page-wrap {
+  width: 50%;
+  margin: 40px 20%;
+}
+h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: bold;
+  font-size: 10rem;
+  padding-bottom: 2rem;
+}
+
+h1,
+p.subtitle,
+p.info,
+li {
+  color: white;
+  font-family: "Arvo", serif;
+}
+
+.subtitle {
+  font-weight: 700;
+  padding-bottom: 0.5rem;
 }
