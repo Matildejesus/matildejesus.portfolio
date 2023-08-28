@@ -1,0 +1,31 @@
+.text-bg-success {
+  color: #fff !important;
+  background-color: RGBA(138, 43, 226, var(--bs-bg-opacity, 1)) !important;
+}
+
+.task {
+  border: 2px solid rgba(138, 43, 226, 0.5);
+  background-color: rgba(138, 43, 226, 0.2);
+  padding: 3rem 0rem;
+  margin: 2rem 3rem;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+body {
+  height: 100vh;
+}
+
+input {
+  border: none;
+  text-align: center;
+}
+
+button.btn {
+  margin-top: -20%;
+}
