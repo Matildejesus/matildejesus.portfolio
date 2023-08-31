@@ -94,12 +94,6 @@ dt {
   border-right: 1px solid #999;
 }
 
-@media (max-width: 900px) {
-  #page-wrap {
-    width: 120%;
-    margin: 0;
-  }
-}
 dd {
   width: 80%;
   float: right;
@@ -109,4 +103,23 @@ dd.clear {
   float: none;
   margin: 0;
   height: 15px;
+}
+
+@media (max-width: 900px) {
+  #page-wrap {
+    width: 80%;
+    margin: 5% auto;
+  }
+  #objective {
+    width: 70%;
+  }
+  dd {
+    width: 60%;
+  }
+  dt {
+    width: 30%;
+  }
+  h2 span {
+    position: relative;
+  }
 }
