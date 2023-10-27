@@ -4,9 +4,9 @@
 }
 
 body {
-  /* font: 16px Helvetica, Sans-Serif; */
   line-height: 24px;
   background: url(imgs/noise.jpg);
+  font-family: 16px Helvetica, Sans-Serif;
 }
 
 .clear {
@@ -17,9 +17,24 @@ body {
   width: 70%;
   margin: 5% auto;
 }
+@media (max-width: 900px) {
+  #page-wrap {
+    width: 77%;
+    margin: 5% auto;
+  }
+}
+
+h1,
+p {
+  margin-bottom: 16px;
+}
+h1.language,
+p.language {
+  font-weight: 14px;
+  font-style: italic;
+}
 
 h1 {
-  margin: 0 0 16px 0;
   padding: 0 0 16px 0;
   font-size: 42px;
   font-weight: bold;
@@ -29,23 +44,24 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 25.2px;
   margin: 0 0 6px 0;
   position: relative;
   color: #465562;
 }
-
 h2 span {
   position: absolute;
   bottom: 0;
   right: 0;
   font-style: italic;
-  font-size: 16px;
-  color: #999;
+  font-size: 16.8px;
   font-weight: normal;
+  color: #999;
 }
-p {
-  margin: 0 0 16px 0;
+@media (max-width: 900px) {
+  h2 span {
+    position: relative;
+  }
 }
 
 a.email {
@@ -63,13 +79,17 @@ ul.experience {
 }
 
 #objective {
-  width: 50%;
+  width: 49%;
   float: left;
 }
 #objective p {
-  /* font-family: Georgia, Serif; */
   font-style: italic;
-  color: #666;
+  color: #cccccc;
+}
+@media (max-width: 900px) {
+  #objective {
+    width: 70%;
+  }
 }
 
 img.image {
@@ -77,49 +97,36 @@ img.image {
   margin: -2rem 0 0 0;
 }
 
-p.language {
-  font-weight: 14px;
-  font-style: italic;
-}
-
 dt {
   font-style: italic;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16.8px;
   text-align: right;
   padding: 0 26px 0 0;
-  width: 15%;
+  width: 14%;
   float: left;
   height: 100px;
   border-right: 1px solid #999;
 }
-
-dd {
-  width: 80%;
-  float: right;
+@media (max-width: 900px) {
+  dt {
+    width: 28%;
+  }
 }
 
+dd {
+  width: 77%;
+  float: right;
+}
 dd.clear {
   float: none;
   margin: 0;
   height: 15px;
 }
-
 @media (max-width: 900px) {
-  #page-wrap {
-    width: 80%;
-    margin: 5% auto;
-  }
-  #objective {
-    width: 70%;
-  }
   dd {
-    width: 60%;
-  }
-  dt {
-    width: 30%;
-  }
-  h2 span {
-    position: relative;
+    width: 59.5%;
   }
 }
+
+/*# sourceMappingURL=resume.css.map */

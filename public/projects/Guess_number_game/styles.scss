@@ -1,3 +1,9 @@
+$color: (
+  main: #282525,
+  secondary: #eee,
+);
+$base-font: "Tektur", cursive;
+
 @import url("https://fonts.googleapis.com/css2?family=Tektur:wght@700&display=swap");
 * {
   margin: 0;
@@ -5,17 +11,16 @@
 }
 
 body {
-  background-color: rgb(40, 37, 37);
-  color: #eee;
+  background-color: map-get($color, main);
+  color: map-get($color, secondary);
   box-sizing: border-box;
   height: 100vh;
-  font-family: "Tektur", cursive;
+  font-family: $base-font;
 }
-
 header {
   position: relative;
   padding: 1rem;
-  border-bottom: 5px solid #eee;
+  border-bottom: 5px solid map-get($color, secondary);
 }
 
 h1 {
@@ -41,18 +46,18 @@ h1 {
 .number {
   text-align: center;
   font-size: 6rem;
-  color: rgb(40, 37, 37);
+  color: map-get($color, main);
   padding: 0rem 3rem;
   position: absolute;
   right: 50%;
   bottom: 0;
-  background-color: #eee;
+  background-color: map-get($color, secondary);
   transform: translate(50%, 50%);
 }
 
 input.guess,
 textarea {
-  background-color: rgb(40, 37, 37);
+  background-color: map-get($color, main);
 }
 
 main {
@@ -61,14 +66,14 @@ main {
 }
 
 .btn {
-  background-color: #eee;
+  background-color: map-get($color, secondary);
   font-size: 20px;
-  font-family: "Tektur", cursive;
+  font-family: $base-font;
   padding: 1rem 3rem;
   border: none;
-}
-.btn:hover {
-  background-color: #6a6969;
+  &:hover {
+    background-color: #6a6969;
+  }
 }
 
 .left {
@@ -85,10 +90,10 @@ main {
 
 .guess {
   font-size: 6rem;
-  font-family: "Tektur", cursive;
+  font-family: $base-font;
   text-align: center;
-  border: 2px solid #eee;
-  color: #eee;
+  border: 2px solid map-get($color, secondary);
+  color: map-get($color, secondary);
   margin-bottom: 1rem;
   width: 15rem;
   margin: 2rem;
@@ -101,5 +106,3 @@ main {
 .label-score {
   margin-bottom: 1rem;
 }
-
-/*# sourceMappingURL=styles.css.map */

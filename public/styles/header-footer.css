@@ -13,7 +13,6 @@ button.nav-link {
   padding: 0;
   text-underline-offset: -1rem;
 }
-
 @media (min-width: 989px) {
   button.btn {
     position: fixed;
@@ -25,3 +24,5 @@ button.nav-link {
 .portrait {
   border-radius: 50px;
 }
+
+/*# sourceMappingURL=header-footer.css.map */

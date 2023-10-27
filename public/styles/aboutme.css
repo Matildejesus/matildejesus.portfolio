@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Fjalla+One&display=swap");
-
 body {
-  background: linear-gradient(217deg, #37c6d3, rgba(255, 0, 0, 0) 70.71%),
-    linear-gradient(127deg, rgba(86, 50, 186, 255), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgb(15, 17, 82), rgba(0, 0, 255, 0) 70.71%);
+  background: linear-gradient(217deg, #37c6d3, rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgb(86, 50, 186), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgb(15, 17, 82), rgba(0, 0, 255, 0) 70.71%);
   width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -16,30 +13,23 @@ body {
   width: 50%;
   margin: 40px 20%;
 }
+
 h1 {
   font-weight: bold;
   font-size: 10rem;
   font-family: "ADLaM Display", cursive;
-  /* padding-bottom: 2rem; */
 }
 
-p.subtitle {
-  font-size: 1.5rem;
-}
-
-h1,
-p.subtitle,
-p.info,
-li {
+.styling, li, p.info, p.subtitle, h1 {
   color: white;
   font-family: "Arvo", serif;
 }
 
-.subtitle {
+p.subtitle {
+  font-size: 1.5rem;
   font-weight: 700;
   padding-bottom: 0.5rem;
 }
-
 .title {
   border-bottom: 2px solid white;
   padding-bottom: 2rem;
@@ -49,3 +39,5 @@ li {
   font-size: 4rem;
   font-family: "ADLaM Display", cursive;
 }
+
+/*# sourceMappingURL=aboutme.css.map */

@@ -1,0 +1,138 @@
+$color: (
+  base: #465562,
+  secondary: #999,
+);
+$base-font: 16px Helvetica, Sans-Serif;
+$base-font-size: 42px;
+$border: 1px solid map-get($color, secondary);
+$base-width: 70%;
+$breakpoint: 900px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 24px;
+  background: url(imgs/noise.jpg);
+  font-family: $base-font;
+}
+
+.clear {
+  clear: both;
+}
+
+#page-wrap {
+  width: $base-width;
+  margin: 5% auto;
+  @media (max-width: $breakpoint) {
+    width: $base-width * 1.1;
+    margin: 5% auto;
+  }
+}
+
+h1,
+p {
+  margin-bottom: 16px;
+  &.language {
+    font: {
+      weight: 14px;
+      style: italic;
+    }
+  }
+}
+
+h1 {
+  padding: 0 0 16px 0;
+  font: {
+    size: $base-font-size;
+    weight: bold;
+  }
+  letter-spacing: -2px;
+  border-bottom: $border;
+  color: map-get($color, base);
+}
+
+h2 {
+  font-size: $base-font-size * 0.6;
+  margin: 0 0 6px 0;
+  position: relative;
+  color: map-get($color, base);
+
+  span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font: {
+      style: italic;
+      size: $base-font-size * 0.4;
+      weight: normal;
+    }
+    color: map-get($color, secondary);
+    @media (max-width: $breakpoint) {
+      position: relative;
+    }
+  }
+}
+
+a.email {
+  color: map-get($color, secondary);
+  text-decoration: none;
+  border-bottom: 1px dotted map-get($color, secondary);
+  &:hover {
+    border-bottom-style: solid;
+    color: black;
+  }
+}
+
+ul.experience {
+  margin: 0 0 32px 17px;
+}
+
+#objective {
+  width: $base-width * 0.7;
+  float: left;
+  p {
+    font-style: italic;
+    color: lighten(map-get($color, secondary), 20%);
+  }
+  @media (max-width: $breakpoint) {
+    width: $base-width;
+  }
+}
+
+img.image {
+  float: right;
+  margin: -2rem 0 0 0;
+}
+
+dt {
+  font: {
+    style: italic;
+    weight: bold;
+    size: $base-font-size * 0.4;
+  }
+  text-align: right;
+  padding: 0 26px 0 0;
+  width: $base-width * 0.2;
+  float: left;
+  height: 100px;
+  border-right: $border;
+  @media (max-width: $breakpoint) {
+    width: $base-width * 0.4;
+  }
+}
+
+dd {
+  width: $base-width * 1.1;
+  float: right;
+  &.clear {
+    float: none;
+    margin: 0;
+    height: 15px;
+  }
+  @media (max-width: $breakpoint) {
+    width: $base-width * 0.85;
+  }
+}
