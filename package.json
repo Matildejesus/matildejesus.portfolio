@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon portfolio.js"
+    "start": "node portfolio.js"
   },
   "author": "Matilde",
   "license": "ISC",
