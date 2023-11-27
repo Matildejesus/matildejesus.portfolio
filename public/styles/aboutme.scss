@@ -4,9 +4,7 @@ $base-font-size: 10rem;
 @import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Fjalla+One&display=swap");
 
 body {
-  background: linear-gradient(217deg, #37c6d3, rgba(255, 0, 0, 0) 70.71%),
-    linear-gradient(127deg, rgba(86, 50, 186, 255), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgb(15, 17, 82), rgba(0, 0, 255, 0) 70.71%);
+  background-color: #010135 !important;
   width: 100vw;
   min-height: 100vh;
   display: flex;
@@ -16,7 +14,7 @@ body {
 }
 
 .page-wrap {
-  width: 50%;
+  width: 40%;
   margin: 40px 20%;
 }
 h1 {
@@ -51,13 +49,34 @@ li {
 }
 
 .title {
-  border-bottom: 2px solid white;
   padding-bottom: 2rem;
   width: 80%;
   margin: 5% 10% 0;
+  color: white;
   font: {
     weight: bold;
     size: $base-font-size * 0.4;
     family: $base-font;
   }
+}
+.about-section {
+  position: relative;
+  background-color: #fff;
+  padding: 40px;
+  margin-left: -15%;
+  margin-right: -15%;
+}
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border: 5px solid #fff;
+}
+.about-text {
+  padding-left: 25%;
 }

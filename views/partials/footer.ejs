@@ -12,7 +12,7 @@
         </svg>
       </a>
       <p
-        class="name mb-3 mb-md-0 <%= activeTab === 'home' ? 'text-white' : 'text-body-secondary' %>"
+        class="name mb-3 mb-md-0 <%= activeTab === 'home' || 'aboutme' ? 'text-white' : 'text-body-secondary' %>"
       >
         Matilde Jesus
       </p>
@@ -27,7 +27,7 @@
             xmlns="http://www.w3.org/2000/svg"
             width="25"
             height="25"
-            fill="<%= activeTab === 'home' ? 'white' : 'currentColor' %>"
+            fill="<%= activeTab === 'home' || 'aboutme' ? 'white' : 'currentColor' %>"
             class="bi bi-instagram"
             viewBox="0 0 16 16"
           >
@@ -43,7 +43,7 @@
             xmlns="http://www.w3.org/2000/svg"
             width="25"
             height="25"
-            fill="<%= activeTab === 'home' ? 'white' : 'currentColor' %>"
+            fill="<%= activeTab === 'home' || 'aboutme' ? 'white' : 'currentColor' %>"
             class="bi bi-github"
             viewBox="0 0 16 16"
           >
@@ -60,7 +60,7 @@
             xmlns="http://www.w3.org/2000/svg"
             width="25"
             height="25"
-            fill="<%= activeTab === 'home' ? 'white' : 'currentColor' %>"
+            fill="<%= activeTab === 'home' || 'white' ? 'white' : 'currentColor' %>"
             class="bi bi-linkedin"
             viewBox="0 0 16 16"
           >

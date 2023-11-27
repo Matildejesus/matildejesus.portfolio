@@ -1,29 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Fjalla+One&display=swap");
 
-body {
-  width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div.background {
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+div.skills-section {
+  height: 75vh;
 }
 
 h2,
 p {
   font-family: "Arvo", serif;
+  color: white !important;
 }
 
 h1 {
   font-family: "Fjalla One", sans-serif;
   font-weight: 900;
+  color: white !important;
 }
 
-span.name {
-  color: white;
+h3 {
+  font-family: "Fjalla One", sans-serif;
 }
-
 div.body {
   width: 50%;
   margin: 9% 50% 4%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(10px);
+}
+
+.scroll-down {
+  align-content: center;
+  justify-content: center;
+}
+
+.skillcard {
+  border: 2px solid "black";
+}
+
+body {
+  background-color: #010135 !important;
+}
+
+/* .cards-container {
+  height: 75vh;
+} */
+
+.bd-placeholder-img {
+  object-fit: cover; /* This will cover the area without stretching the image */
 }
