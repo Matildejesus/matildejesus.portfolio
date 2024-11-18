@@ -1,13 +1,3 @@
-$color: (
-  base: #465562,
-  secondary: #999,
-);
-$base-font: 16px Helvetica, Sans-Serif;
-$base-font-size: 42px;
-$border: 1px solid map-get($color, secondary);
-$base-width: 70%;
-$breakpoint: 900px;
-
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +6,7 @@ $breakpoint: 900px;
 body {
   line-height: 24px;
   background: url(imgs/noise.jpg);
-  font-family: $base-font;
+  font-family: 16px Helvetica, Sans-Serif;
 }
 
 .clear {
@@ -24,66 +14,67 @@ body {
 }
 
 #page-wrap {
-  width: $base-width;
+  width: 70%;
   margin: 5% auto;
-  @media (max-width: $breakpoint) {
-    width: $base-width * 1.1;
+}
+
+@media (max-width: 900px) {
+  #page-wrap {
+    width: 77%;
     margin: 5% auto;
   }
 }
-
 h1,
 p {
   margin-bottom: 16px;
-  &.language {
-    font: {
-      weight: 14px;
-      style: italic;
-    }
-  }
+}
+
+h1.language,
+p.language {
+  font-weight: 14px;
+  font-style: italic;
 }
 
 h1 {
   padding: 0 0 16px 0;
-  font: {
-    size: $base-font-size;
-    weight: bold;
-  }
+  font-size: 42px;
+  font-weight: bold;
   letter-spacing: -2px;
-  border-bottom: $border;
-  color: map-get($color, base);
+  border-bottom: 1px solid #999;
+  color: #465562;
 }
 
 h2 {
-  font-size: $base-font-size * 0.6;
+  font-size: 20px;
   margin: 0 0 6px 0;
   position: relative;
-  color: map-get($color, base);
-
-  span {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font: {
-      style: italic;
-      size: $base-font-size * 0.4;
-      weight: normal;
-    }
-    color: map-get($color, secondary);
-    @media (max-width: $breakpoint) {
-      position: relative;
-    }
-  }
+  color: #465562;
 }
 
-a.email {
-  color: map-get($color, secondary);
-  text-decoration: none;
-  border-bottom: 1px dotted map-get($color, secondary);
-  &:hover {
-    border-bottom-style: solid;
-    color: black;
+h2 span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-style: italic;
+  font-size: 16.8px;
+  font-weight: normal;
+  color: #999;
+}
+
+@media (max-width: 900px) {
+  h2 span {
+    position: relative;
   }
+}
+a.email {
+  color: #999;
+  text-decoration: none;
+  border-bottom: 1px dotted #999;
+}
+
+a.email:hover {
+  border-bottom-style: solid;
+  color: black;
 }
 
 ul.experience {
@@ -91,48 +82,58 @@ ul.experience {
 }
 
 #objective {
-  width: $base-width * 0.7;
+  width: 49%;
   float: left;
-  p {
-    font-style: italic;
-    color: lighten(map-get($color, secondary), 20%);
-  }
-  @media (max-width: $breakpoint) {
-    width: $base-width;
-  }
 }
 
+#objective p {
+  font-style: italic;
+  color: "black";
+}
+
+@media (max-width: 900px) {
+  #objective {
+    width: 70%;
+  }
+}
 img.image {
   float: right;
   margin: -2rem 0 0 0;
 }
 
 dt {
-  font: {
-    style: italic;
-    weight: bold;
-    size: $base-font-size * 0.4;
-  }
+  font-style: italic;
+  font-weight: bold;
+  font-size: 16.8px;
   text-align: right;
   padding: 0 26px 0 0;
-  width: $base-width * 0.2;
+  width: 14%;
   float: left;
   height: 100px;
-  border-right: $border;
-  @media (max-width: $breakpoint) {
-    width: $base-width * 0.4;
+  border-right: 1px solid #999;
+}
+
+@media (max-width: 900px) {
+  dt {
+    width: 28%;
+  }
+}
+dd {
+  width: 77%;
+  float: right;
+}
+
+dd.clear {
+  float: none;
+  margin: 0;
+  height: 15px;
+}
+
+@media (max-width: 900px) {
+  dd {
+    width: 59.5%;
   }
 }
 
-dd {
-  width: $base-width * 1.1;
-  float: right;
-  &.clear {
-    float: none;
-    margin: 0;
-    height: 15px;
-  }
-  @media (max-width: $breakpoint) {
-    width: $base-width * 0.85;
-  }
-}
+
+/*# sourceMappingURL=resume.scss.map */

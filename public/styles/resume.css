@@ -17,17 +17,18 @@ body {
   width: 70%;
   margin: 5% auto;
 }
+
 @media (max-width: 900px) {
   #page-wrap {
     width: 77%;
     margin: 5% auto;
   }
 }
-
 h1,
 p {
   margin-bottom: 16px;
 }
+
 h1.language,
 p.language {
   font-weight: 14px;
@@ -44,11 +45,12 @@ h1 {
 }
 
 h2 {
-  font-size: 25.2px;
+  font-size: 20px;
   margin: 0 0 6px 0;
   position: relative;
   color: #465562;
 }
+
 h2 span {
   position: absolute;
   bottom: 0;
@@ -58,17 +60,18 @@ h2 span {
   font-weight: normal;
   color: #999;
 }
+
 @media (max-width: 900px) {
   h2 span {
     position: relative;
   }
 }
-
 a.email {
   color: #999;
   text-decoration: none;
   border-bottom: 1px dotted #999;
 }
+
 a.email:hover {
   border-bottom-style: solid;
   color: black;
@@ -82,16 +85,17 @@ ul.experience {
   width: 49%;
   float: left;
 }
+
 #objective p {
   font-style: italic;
-  color: #cccccc;
+  color: "black";
 }
+
 @media (max-width: 900px) {
   #objective {
     width: 70%;
   }
 }
-
 img.image {
   float: right;
   margin: -2rem 0 0 0;
@@ -108,25 +112,28 @@ dt {
   height: 100px;
   border-right: 1px solid #999;
 }
+
 @media (max-width: 900px) {
   dt {
     width: 28%;
   }
 }
-
 dd {
   width: 77%;
   float: right;
 }
+
 dd.clear {
   float: none;
   margin: 0;
   height: 15px;
 }
+
 @media (max-width: 900px) {
   dd {
     width: 59.5%;
   }
 }
+
 
 /*# sourceMappingURL=resume.css.map */
