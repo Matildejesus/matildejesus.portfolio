@@ -2,115 +2,96 @@
   class="navbar sticky-top navbar-expand-lg py-2 <%= activeTab === 'aboutme' ? 'shadow-lg' : '' %>"
   style="background-color: white"
 >
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/"> Portfolio </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav nav-underline" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link <%= activeTab === 'home' ? 'active' : '' %>"
-            id="home-tab"
-            data-bs-toglle="tab"
-            data-bs-target="#home"
+    <div class="container-fluid">
+        <a class="navbar-brand col-6" href="/"> Portfolio </a>
+        <button
+            class="navbar-toggler"
             type="button"
-            role="tab"
-            aria-controls="home"
-            aria-selected="true"
-            href="/"
-          >
-            <a class="button" href="/">Home</a>
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link <%= activeTab === 'aboutme' ? 'active' : '' %>"
-            id="aboutme-tab"
-            data-bs-toglle="tab"
-            data-bs-target="#aboutme"
-            type="button"
-            role="tab"
-            aria-controls="aboutme"
-            aria-selected="false"
-          >
-            <a class="button" href="/aboutme">About Me</a>
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link <%= activeTab === 'resume' ? 'active' : '' %>"
-            id="resume-tab"
-            data-bs-toglle="tab"
-            data-bs-target="#resume"
-            type="button"
-            role="tab"
-            aria-controls="resume"
-            aria-selected="false"
-          >
-            <a class="button" href="/resume">Resume</a>
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link <%= activeTab === 'work' ? 'active' : '' %>"
-            id="work-tab"
-            data-bs-toglle="tab"
-            data-bs-target="#work"
-            type="button"
-            role="tab"
-            aria-controls="work"
-            aria-selected="true"
-            href="/work"
-          >
-            <a class="button" href="/work">Works</a>
-          </button>
-        </li>
-        <div class="tab-content">
-          <div
-            class="tab-pane <%= activeTab === 'home' ? 'active' : '' %>"
-            id="home"
-            role="tabpanel"
-            aria-labelledby="home-tab"
-            tabindex="0"
-          ></div>
-          <div
-            class="tab-pane <%= activeTab === 'aboutme' ? 'active' : '' %>"
-            id="aboutme"
-            role="tabpanel"
-            aria-labelledby="aboutme-tab"
-            tabindex="0"
-          ></div>
-          <div
-            class="tab-pane <%= activeTab === 'resume' ? 'active' : '' %>"
-            id="resume"
-            role="tabpanel"
-            aria-labelledby="resume-tab"
-            tabindex="0"
-          ></div>
-          <div
-            class="tab-pane <%= activeTab === 'work' ? 'active' : '' %>"
-            id="work"
-            role="tabpanel"
-            aria-labelledby="work-tab"
-            tabindex="0"
-          ></div>
-        </div>
-      </ul>
-      <form class="d-flex" role="search" id="navbarNavDropdown">
-        <button class="btn btn-outline-success" type="submit">
-          <a class="button" role="button" href="tel:0436367643"> Contact Me </a>
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
         </button>
-      </form>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav nav-underline ms-auto" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button
+                        class="nav-link <%= activeTab === 'home' ? 'active' : '' %>"
+                        id="home-tab"
+                        data-bs-toglle="tab"
+                        data-bs-target="#home"
+                        type="button"
+                        role="tab"
+                        aria-controls="home"
+                        aria-selected="true"
+                        href="/"
+                    >
+                        <a class="button" href="/">Home</a>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button
+                        class="nav-link <%= activeTab === 'skillset' ? 'active' : '' %>"
+                        id="skillset-tab"
+                        data-bs-toglle="tab"
+                        data-bs-target="#skillset"
+                        type="button"
+                        role="tab"
+                        aria-controls="skillset"
+                        aria-selected="false"
+                    >
+                        <a class="button" href="/skillset">SkillSet</a>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button
+                        class="nav-link <%= activeTab === 'project' ? 'active' : '' %>"
+                        id="project-tab"
+                        data-bs-toglle="tab"
+                        data-bs-target="#project"
+                        type="button"
+                        role="tab"
+                        aria-controls="project"
+                        aria-selected="false"
+                    >
+                        <a class="button" href="/project">Project</a>
+                    </button>
+                </li>
+                <div class="tab-content">
+                    <div
+                        class="tab-pane <%= activeTab === 'home' ? 'active' : '' %>"
+                        id="home"
+                        role="tabpanel"
+                        aria-labelledby="home-tab"
+                        tabindex="0"
+                    >
+                    </div>
+                    <div
+                        class="tab-pane <%= activeTab === 'skillset' ? 'active' : '' %>"
+                        id="skillset"
+                        role="tabpanel"
+                        aria-labelledby="skillset-tab"
+                        tabindex="0"
+                    >
+                    </div>
+                    <div
+                        class="tab-pane <%= activeTab === 'resume' ? 'active' : '' %>"
+                        id="resume"
+                        role="tabpanel"
+                        aria-labelledby="resume-tab"
+                        tabindex="0"
+                    >
+                    </div>
+                </div>
+            </ul>
+            <!-- <form class="d-flex" role="search" id="navbarNavDropdown">
+                <button class="btn btn-outline-success" type="submit">
+                    <a class="button" role="button" href="tel:0436367643"> Contact Me </a>
+                </button>
+            </form> -->
+        </div>
     </div>
-  </div>
 </nav>

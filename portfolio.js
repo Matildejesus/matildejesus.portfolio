@@ -14,16 +14,12 @@ app.get("/", (req, res) => {
   res.render("index", { activeTab: "home" });
 });
 
-app.get("/aboutme", (req, res) => {
-  res.render("aboutme", { activeTab: "aboutme" });
+app.get("/skillset", (req, res) => {
+  res.render("skillset", { activeTab: "skillset" });
 });
 
-app.get("/work", (req, res) => {
-  res.render("work", { activeTab: "work" });
-});
-
-app.get("/resume", (req, res) => {
-  res.render("resume", { activeTab: "resume" });
+app.get("/project", (req, res) => {
+  res.render("project", { activeTab: "project" });
 });
 
 app.listen(port, () => {
