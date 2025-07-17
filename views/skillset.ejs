@@ -20,8 +20,8 @@
     </head>
     <body>
         <%- include("partials/header.ejs") %>
-        <div class="cards-container">
-            <div class="row m-5 align-items-center">
+        <div class="cards-container" style="background-color: #e6dace;">
+            <div class="row p-3 align-items-center">
                 <div class="col-md-4 card1">
                     <div
                         class="card row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
@@ -145,6 +145,7 @@
         
         <div
             class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 px-5"
+            style="background-color: #e6dace;"
         >
             <div class="col d-flex align-items-start tool">
                 <img src="imgs/logo/javascript.svg" />
@@ -349,7 +350,7 @@
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script href="portfolio.js"></script>
          <script>
-            ScrollReveal().reveal(".tool", { delay: 3800 });
+            ScrollReveal().reveal(".tool", { delay: 1500 });
             ScrollReveal().reveal(".card1", {
                 beforeReveal: function (el) {
                 el.classList.add(
@@ -364,7 +365,7 @@
                 el.classList.add(
                     "animate__animated",
                     "animate__jackInTheBox",
-                    "animate__delay-2s"
+                    "animate__delay-1s"
                 );
                 },
             });
@@ -373,7 +374,7 @@
                 el.classList.add(
                     "animate__animated",
                     "animate__jackInTheBox",
-                    "animate__delay-3s"
+                    "animate__delay-1s"
                 );
                 },
             });
