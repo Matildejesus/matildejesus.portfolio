@@ -6,6 +6,24 @@ const port = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
 
+app.get("*.js.br", (req, res, next) => {
+    res.set("Content-Encoding", "br");
+    res.set("Content-Type", "application/javascript");
+    next();
+});
+
+app.get("*.wasm.br", (req, res, next) => {
+    res.set("Content-Encoding", "br");
+    res.set("Content-Type", "application/wasm");
+    next();
+});
+
+app.get("*.data.br", (req, res, next) => {
+    res.set("Content-Encoding", "br");
+    res.set("Content-Type", "application/octet-stream");
+    next();
+});
+
 app.use(express.static("public"));
 
 app.use(bodyParser.urlencoded({ extended: true }));
