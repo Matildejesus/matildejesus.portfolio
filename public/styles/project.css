@@ -102,4 +102,42 @@
   color: #010135;
 }
 
+@media screen and (max-width: 1057px) {
+  .project {
+    flex-direction: column;
+    gap: 24px;
+    margin-left: 0;
+    padding-bottom: 1rem;
+  }
+  .project-card {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .work {
+    width: 100%;
+    height: auto;
+  }
+  .information {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .div-3 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .div-3 > div:first-child {
+    font-weight: bold;
+  }
+  .feature-list {
+    width: 100% !important;
+  }
+}
+.feature-list {
+  width: 30vw;
+}
+
 /*# sourceMappingURL=project.css.map */
