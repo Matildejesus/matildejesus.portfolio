@@ -127,6 +127,9 @@ border {
         align-items: start;
         height: 40vh; 
     }
+    .buttons {
+      flex-direction: row;
+    }
 }
 
 .buttons a {
